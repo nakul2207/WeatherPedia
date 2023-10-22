@@ -35,7 +35,7 @@ searchBtn.addEventListener("click", (e) => {
   getweather(cityName);
 })
 
-// getweather("Mumbai");
+ getweather("Mumbai");
 fetch("https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Delhi", options)
   .then((response) => response.json())
   .then((response) => {
