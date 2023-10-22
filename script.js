@@ -5,7 +5,7 @@ const options = {
     "X-RapidAPI-Host": "weather-by-api-ninjas.p.rapidapi.com",
   },
 };
-
+getweather("Mumbai");
 const getweather = (city) => {
   fetch("https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=" + city, options)
     .then((response) => response.json())
@@ -24,7 +24,6 @@ const getweather = (city) => {
     })
     .catch((err) => console.error(err));
 };
- getweather("Mumbai");
 const searchBtn = document.getElementById("searchBtn");
 searchBtn.addEventListener("click", (e) => {
   e.preventDefault();
