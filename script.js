@@ -28,6 +28,11 @@ const getweather = (city) => {
     .catch((err) => console.error(err));
 };
 
+const form = document.getElementById("submit");
+form.addEventListener("click",(e)=>{
+  e.preventDefault();
+  getweather(city.value);
+})
 
 getweather("Mumbai");
 
